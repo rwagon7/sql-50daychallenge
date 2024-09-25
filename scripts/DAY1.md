@@ -7,7 +7,7 @@ Table: Products
 -------------------------
 | productId  | int      |
 | lowFats    | enum     |
-| recyclable  | enum    |
+| recyclable | enum     |
 -------------------------
 productId is the primary key (column with unique values) for this table.
 lowFats is an ENUM (category) of type ('Y', 'N') where 'Y' means this product is low fat and 'N' means it is not.
@@ -27,14 +27,23 @@ Example 1:
 Input: 
 Products table:
 
+----------------------------------------
 | productId   | lowFats  | recyclable  |
+----------------------------------------
 | 0           | Y        | N           |
 | 1           | Y        | Y           |
 | 2           | N        | Y           |
 | 3           | Y        | Y           |
 | 4           | N        | N           |
 ----------------------------------------
+
+| productId   | lowfats  | recyclable  |
+|
+
+
+
 Output: 
+
 ---------------
 | productId   |
 ---------------
